@@ -47,7 +47,7 @@
             <div class="bg-white rounded-2xl p-8 shadow-2xl text-slate-800 transform hover:-translate-y-1 transition-transform">
                 <h2 class="text-2xl font-bold border-b border-slate-200 pb-4 mb-6">Contacto Rápidο</h2>
                 <ul class="space-y-4 text-slate-600">
-                    <li class="flex items-center"><span class="text-2xl mr-3 text-indigo-600">📱</span> +57 302 516 47 43 / +58 414 653 79 33</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3 text-indigo-600">📱</span> +58 424 843 99 59 / +58 414 653 79 33</li>
                     <li class="flex items-center"><span class="text-2xl mr-3 text-indigo-600">📧</span> robin.jackson911@gmail.com</li>
                     <li class="flex items-start"><span class="text-2xl mr-3 text-indigo-600 mt-1">📍</span> <span>Maracaibo, Edo. Zulia - Venezuela</span></li>
                     <li class="flex items-center"><span class="text-2xl mr-3 text-indigo-600">🇻🇪</span> Nacionalidad Venezolana</li>
