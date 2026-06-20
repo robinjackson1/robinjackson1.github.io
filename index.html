@@ -1,863 +1,349 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Esta pagina de una agencia de viajes">
-    <meta name="robots" content="index-follow">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitu Tours</title>
-
-
-  <!-- 
-    - favicon
-  -->
-<link rel="icon" type="image/png" sizes="16x16"  href="Fotos-Pagina/favicon-16x16.png"
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="main.css">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-
+    <title>Perfil Profesional Infográfico | Robin Jackson</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Palette: Vibrant Professional Blue/Amber (Tailwind Indigo, Sky, Amber, Rose) -->
+    <!-- CONFIRMATION: NEITHER Mermaid JS NOR SVG were used anywhere in the output. -->
+    <!-- Plan: Hero -> Skills Radar -> Experience Sectors (Donut) -> Timeline (HTML) -> Education/Courses (Bar). -->
+    <!-- Choices: Skills -> Relationships -> Radar (Chart.js). Sectors -> Compare -> Donut (Chart.js). Courses -> Compare -> Bar (Chart.js). Timeline -> Organize -> HTML/CSS. NO SVG. -->
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .chart-container { position: relative; width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; height: 350px; max-height: 400px; }
+        @media (min-width: 768px) { .chart-container { height: 400px; } }
+    </style>
 </head>
-<body id="top">
+<body class="text-slate-800 antialiased selection:bg-indigo-200 selection:text-indigo-900">
 
-  <!-- 
-    - #HEADER
-  -->
+    <nav class="sticky top-0 z-50 bg-indigo-900 shadow-lg border-b border-indigo-700">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-white font-bold text-xl tracking-tight">ROBIN JACKSON</div>
+            <div class="hidden md:flex space-x-6 text-indigo-100 text-sm font-medium">
+                <a href="#perfil" class="hover:text-amber-400 transition-colors">Perfil</a>
+                <a href="#habilidades" class="hover:text-amber-400 transition-colors">Habilidades</a>
+                <a href="#experiencia" class="hover:text-amber-400 transition-colors">Experiencia</a>
+                <a href="#educacion" class="hover:text-amber-400 transition-colors">Educación</a>
+            </div>
+        </div>
+    </nav>
 
-  <header class="header" data-header>
-    <div class="container">
+    <header id="perfil" class="bg-gradient-to-br from-indigo-900 to-indigo-700 text-white py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Ingeniero Industrial <span class="text-amber-400">&</span> Especialista en Operaciones</h1>
+                <p class="text-lg text-indigo-100 mb-8 leading-relaxed">
+                    Profesional universitario capacitado para ejecutar tareas de calidad, logística, toma de decisiones y análisis de riesgo. Líder nato con disposición para el trabajo en equipo, optimización de procesos y resolución efectiva de problemas.
+                </p>
+                <div class="flex flex-wrap gap-4 text-sm font-medium text-indigo-900">
+                    <span class="bg-amber-400 px-4 py-2 rounded-full shadow-md">⚙️ Optimización de Procesos</span>
+                    <span class="bg-sky-400 px-4 py-2 rounded-full shadow-md">🛡️ Control SIAHO</span>
+                    <span class="bg-rose-400 px-4 py-2 rounded-full shadow-md text-white">🤝 Atención al Cliente</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-2xl text-slate-800 transform hover:-translate-y-1 transition-transform">
+                <h2 class="text-2xl font-bold border-b border-slate-200 pb-4 mb-6">Contacto Rápidο</h2>
+                <ul class="space-y-4 text-slate-600">
+                    <li class="flex items-center"><span class="text-2xl mr-3 text-indigo-600">📱</span> +57 302 516 47 43 / +58 414 653 79 33</li>
+                    <li class="flex items-center"><span class="text-2xl mr-3 text-indigo-600">📧</span> robin.jackson911@gmail.com</li>
+                    <li class="flex items-start"><span class="text-2xl mr-3 text-indigo-600 mt-1">📍</span> <span>Maracaibo, Edo. Zulia - Venezuela</span></li>
+                    <li class="flex items-center"><span class="text-2xl mr-3 text-indigo-600">🇻🇪</span> Nacionalidad Venezolana</li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-      <a href="Fotos-Pagina/Logo-vitu.png">
-        <h1 class="logo">Vitu tour</h1>
-      </a>
+    <main class="max-w-6xl mx-auto px-4 py-12 space-y-20">
 
-      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
-        <ion-icon name="menu-outline" class="open"></ion-icon>
-        <ion-icon name="close-outline" class="close"></ion-icon>
-      </button>
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#" class="navbar-link">Home</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Sobre Nosotros</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Tours</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Destinos</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Blog</a>
-          </li>
-
-          <li>
-            <a href="https://wa.me/message/HKTSMCZKDWXNJ1" class="navbar-link">Contactanos</a>
-          </li>
-
-        </ul>
-
-        <a href="https://wa.me/message/HKTSMCZKDWXNJ1" class="btn btn-secondary">Reserva Ahora</a>
-
-      </nav>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero"
-        style="background-image: url('./assets/images/hero-bg-bottom.png') url('./assets/images/hero-bg-top.png')">
-        <div class="container">
-
-          <img src="Fotos-Pagina/shape-1.png" width="61" height="61" alt="Vector Shape" class="shape shape-1">
-
-          <img src="Fotos-Pagina/shape-2.png" width="56" height="74" alt="Vector Shape" class="shape shape-2">
-
-          <img src="Fotos-Pagina/shape-3.png" width="57" height="72" alt="Vector Shape" class="shape shape-3">
-
-          <div class="hero-content">
-
-            <p class="section-subtitle">Encuentra tu proximo Viaje</p>
-
-            <h2 class="hero-title">Vitutour, Tu Agencia de Viajes de Confianza</h2>
-
-            <p class="hero-text">
-              
-              Descubre. Explora. Vive. Viajar es la llave que abre las puertas a nuevas experiencias, culturas y perspectivas. Sumérgete en el mundo y deja que cada destino te inspire a vivir intensamente. ¡Tu próxima aventura te espera!
-            </p>
-
-            <div class="btn-group">
-              <a href="https://wa.me/message/HKTSMCZKDWXNJ1" class="btn btn-primary">Contactanos</a>
-
-              <a href="#" class="btn btn-outline">Leer Mas</a>
+        <section id="habilidades" class="pt-8">
+            <div class="mb-10 text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Competencias Fundamentales</h2>
+                <p class="text-slate-600 text-lg">
+                    Un perfil híbrido que combina el rigor técnico de la ingeniería industrial, inspecciones de seguridad e informes técnicos, con fuertes habilidades interpersonales desarrolladas en la gestión integral de restaurantes y servicio directo al cliente.
+                </p>
             </div>
 
-          </div>
-
-          <figure class="hero-banner">
-            <img src="Fotos-Pagina/turistico-celebracion-vintage-reloj_1368-7030.avif" width="686" height="812" loading="lazy" alt="hero banner"
-              class="w-100">
-          </figure>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #DESTINATION
-      -->
-
-      <section class="section destination">
-        <div class="container">
-
-          <p class="section-subtitle">Destinos</p>
-
-          <h2 class="h2 section-title">Elige tu destino</h2>
-
-          <ul class="destination-list">
-
-            <li class="w-50">
-              <a href="#" class="destination-card">
-
-                <figure class="card-banner">
-                  <img src="Fotos-Pagina/Guajira1.jpg" width="1140" height="1100" loading="lazy"
-                    alt="Guajira" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">pan de azucar</p>
-
-                  <h3 class="h3 card-title">Guajira</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <div class="chart-container">
+                    <canvas id="skillsRadarChart"></canvas>
                 </div>
-
-              </a>
-            </li>
-
-            <li class="w-50">
-              <a href="#" class="destination-card">
-
-                <figure class="card-banner">
-                  <img src="Fotos-Pagina/San-Andres.jpg" width="1140" height="1100" loading="lazy"
-                    alt="San Andres" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">San Andres</p>
-
-                  <h3 class="h3 card-title">San Andres</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="destination-card">
-
-                <figure class="card-banner">
-                  <img src="Fotos-Pagina/Amazonas.jpg" width="1110" height="480" loading="lazy"
-                    alt="Leticia, Amazonas" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">Leticia</p>
-
-                  <h3 class="h3 card-title">Amazonas</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="destination-card">
-
-                <figure class="card-banner">
-                  <img src="Fotos-Pagina/Santa-Marta.jpg" width="1110" height="480" loading="lazy"
-                    alt="Tayrona, Santa Marta" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">Tayrona</p>
-
-                  <h3 class="h3 card-title">Santa Marta</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="destination-card">
-
-                <figure class="card-banner">
-                  <img src="Fotos-Pagina/MexicoDF.jpg" width="1110" height="480" loading="lazy"
-                    alt="MexicoDF" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">MexicoDF</p>
-
-                  <h3 class="h3 card-title">Mexico</h3>
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #POPULAR
-      -->
-
-      <section class="section popular">
-        <div class="container">
-
-          <p class="section-subtitle">Tours Destacados</p>
-
-          <h2 class="h2 section-title">Tours Mas Populares</h2>
-
-          <ul class="popular-list">
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="Fotos-Pagina/SanAndresfebrero.jpg" width="740" height="518" loading="lazy"
-                      alt="San Andres" class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="P12D">12 Days</time>
-                  </span>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-                    <div class="card-price">Desde $1.589.000</div>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star-outline"></ion-icon>
-
-                      <data value="2">(2)</data>
+                <div class="space-y-6">
+                    <div class="bg-indigo-50 p-6 rounded-xl border-l-4 border-indigo-500">
+                        <h3 class="font-bold text-indigo-900 text-lg mb-2">Operaciones y Logística</h3>
+                        <p class="text-slate-600 text-sm">Capacidad comprobada en gestión de inventarios, supervisión de actividades diarias y disponibilidad óptima de materiales en múltiples sectores.</p>
                     </div>
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
-                  </h3>
-
-                  <address class="card-location">San Andres Island, Colombia</address>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="Fotos-Pagina/Eje-cafetero1.jpg" width="740" height="518" loading="lazy"
-                      alt="Eje Cafetero" class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="P12D">12 Days</time>
-                  </span>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-                    <div class="card-price">Desde $949.000</div>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star-outline"></ion-icon>
-
-                      <data value="2">(2)</data>
+                    <div class="bg-sky-50 p-6 rounded-xl border-l-4 border-sky-500">
+                        <h3 class="font-bold text-sky-900 text-lg mb-2">SIAHO y Calidad</h3>
+                        <p class="text-slate-600 text-sm">Inspecciones técnicas en instalaciones industriales, cumplimiento estricto de normativas y protocolos de inocuidad e higiene.</p>
                     </div>
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
-                  </h3>
-
-                  <address class="card-location">Eje Cafetero, Colombia</address>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="Fotos-Pagina/Cancunfebrero.jpg" width="740" height="518" loading="lazy"
-                      alt="Cancun, Mexico" class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="P12D">12 Days</time>
-                  </span>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-                    <div class="card-price">Desde $3.799.000</div>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star-outline"></ion-icon>
-
-                      <data value="2">(2)</data>
+                    <div class="bg-amber-50 p-6 rounded-xl border-l-4 border-amber-500">
+                        <h3 class="font-bold text-amber-900 text-lg mb-2">Servicio y Resolución</h3>
+                        <p class="text-slate-600 text-sm">Excelencia en atención al cliente, gestión integral de establecimientos y toma de decisiones para ejecutar acciones correctivas en tiempo real.</p>
                     </div>
-                  </div>
+                </div>
+            </div>
+        </section>
 
-                  <h3 class="card-title">
-                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
-                  </h3>
+        <section id="experiencia" class="pt-8">
+            <div class="mb-10 max-w-3xl">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Trayectoria Profesional</h2>
+                <p class="text-slate-600 text-lg">
+                    La carrera de Robin destaca por una adaptabilidad excepcional, migrando con éxito entre posiciones técnicas de control en la industria petrolera y de transporte, hacia el liderazgo en emprendimiento comercial y gestión de servicios gastronómicos.
+                </p>
+            </div>
 
-                  <address class="card-location">Cancun, Mexico</address>
-
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                
+                <div class="lg:col-span-1 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-center">
+                    <h3 class="text-xl font-bold text-center text-slate-800 mb-6">Distribución por Sector</h3>
+                    <div class="chart-container" style="height: 280px;">
+                        <canvas id="sectorDonutChart"></canvas>
+                    </div>
+                    <p class="text-center text-sm text-slate-500 mt-4 px-4">
+                        El gráfico ilustra el balance entre la rigurosidad del sector industrial y el dinamismo del área de servicios y emprendimiento.
+                    </p>
                 </div>
 
-              </div>
-            </li>
+                <div class="lg:col-span-2">
+                    <div class="relative border-l-4 border-indigo-200 pl-6 space-y-10 py-4">
+                        
+                        <div class="relative">
+                            <div class="absolute -left-8 top-1 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white shadow-sm"></div>
+                            <h4 class="text-xl font-bold text-slate-900">Artist Sub</h4>
+                            <p class="text-indigo-600 font-semibold mb-2">S UB WAY, Villavicencio | Dic 2023 – Ene 2026</p>
+                            <ul class="text-slate-600 text-sm space-y-2 list-none">
+                                <li>• Atención al cliente y preparación de pedidos siguiendo estrictos protocolos de calidad.</li>
+                                <li>• Manejo de inventarios, limpieza, orden y cumplimiento de BPM (Buenas Prácticas de Manufactura).</li>
+                            </ul>
+                        </div>
 
-          </ul>
+                        <div class="relative">
+                            <div class="absolute -left-8 top-1 w-6 h-6 bg-amber-500 rounded-full border-4 border-white shadow-sm"></div>
+                            <h4 class="text-xl font-bold text-slate-900">Emprendimiento Local de Comidas</h4>
+                            <p class="text-amber-600 font-semibold mb-2">Independiente, Villavicencio | Dic 2018 – Nov 2023</p>
+                            <ul class="text-slate-600 text-sm space-y-2 list-none">
+                                <li>• Gestión integral operativa, logística y de calidad de servicio del restaurante.</li>
+                                <li>• Control minucioso de inventarios y capacitación del personal en higiene alimentaria.</li>
+                            </ul>
+                        </div>
 
+                        <div class="relative">
+                            <div class="absolute -left-8 top-1 w-6 h-6 bg-sky-500 rounded-full border-4 border-white shadow-sm"></div>
+                            <h4 class="text-xl font-bold text-slate-900">Controlador Centro Operaciones / Supervisor / Inspector</h4>
+                            <p class="text-sky-600 font-semibold mb-2">Metro de Maracaibo / Comapetca / Nabors | 2015 – 2018</p>
+                            <ul class="text-slate-600 text-sm space-y-2 list-none">
+                                <li>• Supervisión en tiempo real mediante sistemas SCADA, gestión de equipos y mantenimiento.</li>
+                                <li>• Inspecciones técnicas, control de inventarios de materiales y promoción de la cultura preventiva.</li>
+                            </ul>
+                        </div>
+
+                        <div class="relative">
+                            <div class="absolute -left-8 top-1 w-6 h-6 bg-slate-400 rounded-full border-4 border-white shadow-sm"></div>
+                            <h4 class="text-xl font-bold text-slate-900">Aprendiz Electricidad Mantenimiento</h4>
+                            <p class="text-slate-600 font-semibold mb-2">PDVSA CIED ORT, Anaco | Oct 2000 – Feb 2003</p>
+                            <ul class="text-slate-600 text-sm space-y-2 list-none">
+                                <li>• Mantenimiento preventivo básico en motores y tableros bajo estrictas normas de seguridad.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="educacion" class="pt-8 pb-16">
+            <div class="mb-10 text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Formación y Desarrollo Continuo</h2>
+                <p class="text-slate-600 text-lg">
+                    Sólida base académica tecnológica y de ingeniería, respaldada por capacitación focalizada en seguridad laboral, auditoría de calidad y logística integral para fortalecer la toma de decisiones.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-indigo-600">
+                        <div class="text-2xl mb-2">🎓</div>
+                        <h4 class="text-lg font-bold text-slate-900">Ingeniero Industrial</h4>
+                        <p class="text-slate-500">URBE, Venezuela | 2015</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-sky-500">
+                        <div class="text-2xl mb-2">💻</div>
+                        <h4 class="text-lg font-bold text-slate-900">Técnico Superior en Electrónica</h4>
+                        <p class="text-slate-500">UNIR, Venezuela | 2006</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-slate-500">
+                        <div class="text-2xl mb-2">⚡</div>
+                        <h4 class="text-lg font-bold text-slate-900">Técnico Electricista Mantenimiento</h4>
+                        <p class="text-slate-500">PDVSA CIED, Venezuela | 2003</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Cursos de Especialización</h3>
+                        <p class="text-sm text-slate-500 mb-8">Volumen de horas de formación por área clave de competencia.</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="coursesBarChart"></canvas>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>Infografía de Perfil Profesional interactiva generada con bases en currículum vitae estructurado.</p>
+            <p class="mt-2">Robin Jackson &copy; 2026</p>
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about">
-        <div class="container">
-
-          <div class="about-content">
-
-            <p class="section-subtitle">Acerca de nosotros</p>
-
-            <h2 class="h2 section-title">Descubre el mundo a nuestro lado. ¡Explora con nosotros!.</h2>
-
-            <p class="about-text">
-              Embárcate en un viaje de descubrimiento con nosotros. ¡Crea recuerdos que durarán toda la vida!
-              Únete a nuestra aventura y déjanos llevarte a lugares más allá de tus sueños más salvajes.
-            </p>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-
-                <div class="about-item-icon">
-                  <ion-icon name="compass"></ion-icon>
-                </div>
-
-                <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Guías Turisticos</h3>
-
-                  <p class="about-item-text">
-                    Explora con confianza: nuestros guías expertos te acompañan en cada aventura.
-                  </p>
-                </div>
-
-              </li>
-
-              <li class="about-item">
-
-                <div class="about-item-icon">
-                  <ion-icon name="briefcase"></ion-icon>
-                </div>
-
-                <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Precios Amigables</h3>
-
-                  <p class="about-item-text">
-                    Descubre el mundo con presupuestos amigables: experiencias inolvidables a precios accesibles.
-                  </p>
-                </div>
-
-              </li>
-
-              <li class="about-item">
-
-                <div class="about-item-icon">
-                  <ion-icon name="umbrella"></ion-icon>
-                </div>
-
-                <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Tours confiables</h3>
-
-                  <p class="about-item-text">
-                    Explora con seguridad y tranquilidad: nuestros tours son sinónimo de confianza y profesionalismo.
-                  </p>
-                </div>
-
-              </li>
-
-            </ul>
-
-            <a href="https://wa.me/message/HKTSMCZKDWXNJ1" class="btn btn-primary">Reserva Ahora</a>
-
-          </div>
-
-          <figure class="about-banner">
-            <img src="Fotos-Pagina/about-banner.png" width="756" height="842" loading="lazy" alt="" class="w-100">
-          </figure>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog">
-        <div class="container">
-
-          <p class="section-subtitle">Nuestra Pagina</p>
-
-          <h2 class="h2 section-title">Noticias destacadas</h2>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy"
-                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="12-04">04 Dec</time>
-                  </span>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-
-                    <div class="author-wrapper">
-                      <figure class="author-avatar">
-                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
-                      </figure>
-
-                      <div>
-                        <a href="#" class="author-name">Jony bristow</a>
-
-                        <p class="author-title">Admin</p>
-                      </div>
-                    </div>
-
-                    <time class="publish-time" datetime="10:30">10:30 AM</time>
-
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">
-                      A good traveler has no fixed plans and is not intent on arriving.
-                    </a>
-                  </h3>
-
-                  <a href="#" class="btn-link">
-                    <span>Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-2.jpg" width="740" height="518" loading="lazy"
-                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="12-04">04 Dec</time>
-                  </span>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-
-                    <div class="author-wrapper">
-                      <figure class="author-avatar">
-                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
-                      </figure>
-
-                      <div>
-                        <a href="#" class="author-name">Jony bristow</a>
-
-                        <p class="author-title">Admin</p>
-                      </div>
-                    </div>
-
-                    <time class="publish-time" datetime="10:30">10:30 AM</time>
-
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">
-                      A good traveler has no fixed plans and is not intent on arriving.
-                    </a>
-                  </h3>
-
-                  <a href="#" class="btn-link">
-                    <span>Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-3.jpg" width="740" height="518" loading="lazy"
-                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="12-04">04 Dec</time>
-                  </span>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-
-                    <div class="author-wrapper">
-                      <figure class="author-avatar">
-                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
-                      </figure>
-
-                      <div>
-                        <a href="#" class="author-name">Jony bristow</a>
-
-                        <p class="author-title">Admin</p>
-                      </div>
-                    </div>
-
-                    <time class="publish-time" datetime="10:30">10:30 AM</time>
-
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">
-                      A good traveler has no fixed plans and is not intent on arriving.
-                    </a>
-                  </h3>
-
-                  <a href="#" class="btn-link">
-                    <span>Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
-    <div class="container">
-
-      <div class="footer-top">
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Destinos Top</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">San Andres Isla, Colombia</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Cancun, Mexico</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Punta Cana, Republica Dominicana</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Lecitia, Amazonas</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Santa Marta, Colombia</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Categorias</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Viajes</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Estilo de Vida</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Moda</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Educacion</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Comidas & bebidas</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Enlaces Rapidos</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Acerca de</a>
-          </li>
-
-          <li>
-            <a href="https://wa.me/message/HKTSMCZKDWXNJ1" class="footer-link">Contactanos</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Tours</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Reserva</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terminos & Condiciones</a>
-          </li>
-
-        </ul>
-
-        <div class="footer-list">
-
-          <p class="footer-list-title">Recibe informacion</p>
-
-          <p class="newsletter-text">
-            "Suscríbete ahora para recibir ofertas exclusivas y consejos de viaje directamente en tu bandeja de entrada."
-          </p>
-
-          <form action="" class="newsletter-form">
-            <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
-
-            <button type="submit" class="btn btn-primary">Subscribete</button>
-          </form>
-
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-
-        <a href="Fotos-Pagina/Logo-vitu.png" class="logo">Vitutour</a>
-
-        <p class="copyright">
-          &copy; 2023 <a href="#" class="copyright-link">Vitutour</a>. All Rights Reserved
-        </p>
-
-        <ul class="social-list">
-
-          <li>
-            <a href="https://www.facebook.com/Experienciasincreiblesonvacation?mibextid=ZbWKwL" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://wa.me/message/HKTSMCZKDWXNJ1" class="social-link">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.instagram.com/experienciasincreiblesonv?igsh=dHgzb2Jua292OXRl" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-google"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-  </footer>
-
-
-
-
-
-  <!-- 
-    - #GO TO TOP
-  -->
-
-  <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
-    <ion-icon name="chevron-up-outline"></ion-icon>
-  </a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    </footer>
+
+    <script>
+        function processLabel(label) {
+            const limit = 16;
+            if (label.length <= limit) return label;
+            
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            
+            words.forEach(word => {
+                if ((currentLine + word).length > limit) {
+                    if (currentLine.trim()) lines.push(currentLine.trim());
+                    currentLine = word + ' ';
+                } else {
+                    currentLine += word + ' ';
+                }
+            });
+            if (currentLine.trim()) lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const commonTooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    }
+                    return label;
+                }
+            }
+        };
+
+        const radarLabels = ['Operaciones y Logística', 'Inspecciones de Riesgo (SIAHO)', 'Gestión Atención al Cliente', 'Mantenimiento Industrial', 'Resolución de Problemas'].map(processLabel);
+        new Chart(document.getElementById('skillsRadarChart').getContext('2d'), {
+            type: 'radar',
+            data: {
+                labels: radarLabels,
+                datasets: [{
+                    label: 'Nivel de Experiencia',
+                    data: [90, 85, 95, 75, 90],
+                    backgroundColor: 'rgba(79, 70, 229, 0.2)',
+                    borderColor: 'rgba(79, 70, 229, 1)',
+                    pointBackgroundColor: 'rgba(245, 158, 11, 1)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgba(245, 158, 11, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: { display: false },
+                        grid: { color: 'rgba(0, 0, 0, 0.05)' },
+                        pointLabels: {
+                            font: { family: 'Inter', size: 12, weight: '600' },
+                            color: '#334155'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: commonTooltipConfig
+                }
+            }
+        });
+
+        const donutLabels = ['Sector Industrial y Control', 'Emprendimiento y Servicios'].map(processLabel);
+        new Chart(document.getElementById('sectorDonutChart').getContext('2d'), {
+            type: 'doughnut',
+            data: {
+                labels: donutLabels,
+                datasets: [{
+                    data: [5, 7],
+                    backgroundColor: [
+                        'rgba(14, 165, 233, 0.8)',
+                        'rgba(245, 158, 11, 0.8)'
+                    ],
+                    borderColor: ['#ffffff', '#ffffff'],
+                    borderWidth: 2,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '65%',
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { font: { family: 'Inter', size: 13 } }
+                    },
+                    tooltip: commonTooltipConfig
+                }
+            }
+        });
+
+        const barLabels = ['Logística Integral', 'SG - SST', 'Auditor Interno SIAHO'].map(processLabel);
+        new Chart(document.getElementById('coursesBarChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: barLabels,
+                datasets: [{
+                    label: 'Horas de Certificación',
+                    data: [160, 50, 24],
+                    backgroundColor: [
+                        'rgba(79, 70, 229, 0.8)',
+                        'rgba(14, 165, 233, 0.8)',
+                        'rgba(244, 63, 94, 0.8)'
+                    ],
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: 'rgba(0, 0, 0, 0.05)', drawBorder: false },
+                        title: { display: true, text: 'Horas' }
+                    },
+                    x: {
+                        grid: { display: false, drawBorder: false },
+                        ticks: { font: { family: 'Inter', size: 11 } }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: commonTooltipConfig
+                }
+            }
+        });
+    </script>
 </body>
-
 </html>
