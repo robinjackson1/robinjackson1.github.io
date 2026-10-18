@@ -3,158 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robin Jackson | Ingeniero Industrial & Especialista SIHO-A</title>
-    <!-- Google Fonts & Tailwind CSS para un diseño moderno y profesional -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Robin Jackson - Ingeniero Industrial</title>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 10px 0 5px 0;
+            color: #0056b3;
+        }
+        header h2 {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 0 0 15px 0;
+        }
+        .contact-info, .social-links {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h2.section-title {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            color: #0056b3;
+            font-size: 1.3rem;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .metric-tip {
+            background-color: #fff8e1;
+            border-left: 3px solid #ffc107;
+            padding: 8px 12px;
+            margin: 8px 0;
+            font-size: 0.9rem;
+            color: #856404;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #222;
+        }
+        .job-date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .job-company {
+            font-style: italic;
+            color: #444;
+            margin-bottom: 8px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 leading-relaxed">
+<body>
 
-    <!-- Header / Hero Section -->
-    <header class="bg-slate-900 text-white py-12 shadow-lg">
-        <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300" alt="Robin Jackson" class="w-32 h-32 rounded-full object-cover border-4 border-slate-700 shadow-md">
-            <div class="text-center md:text-left">
-                <h1 class="text-3xl md:text-4xl font-bold tracking-tight">ROBIN JACKSON</h1>
-                <p class="text-xl text-blue-400 font-medium mt-1">Ingeniero Industrial | Especialista en Seguridad, Higiene y Operaciones (SIHO-A)</p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm text-slate-300">
-                    <span>📍 Maracaibo, Venezuela</span>
-                    <span>📞 +58 424-8439959 / +58 424-6537933</span>
-                    <span>✉️ robin.jackson911@gmail.com</span>
-                    <a href="https://www.instagram.com/robin_jackson_2" target="_blank" class="text-blue-400 hover:underline">Instagram</a>
-                </div>
-            </div>
+    <header>
+        <h1>ROBIN JACKSON</h1>
+        <h2>INGENIERO INDUSTRIAL</h2>
+        <div class="contact-info">
+            📍 Urb San Jacinto Sector 9, Vereda 10, Casa # 7, Maracaibo, Edo. Zulia - Venezuela<br>
+            📞 +58 424-8439959 / +58 424-6537933 | ✉️ robin.jackson911@gmail.com
+        </div>
+        <div class="social-links">
+            🌐 <a href="https://robinjackson1.github.io/" target="_blank">robinjackson1.github.io</a> | 
+            📸 <a href="https://www.instagram.com/robin_jackson_2" target="_blank">Instagram</a>
         </div>
     </header>
 
-    <!-- Main Container -->
-    <main class="max-w-4xl mx-auto px-6 py-10 space-y-10">
-
-        <!-- Sobre Mí -->
-        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-            <h2 class="text-xl font-bold text-slate-900 uppercase tracking-wider mb-4 border-b pb-2 border-slate-100">Perfil Profesional</h2>
-            <p class="text-slate-600">
-                Ingeniero Industrial con sólida trayectoria en la gestión de operaciones, optimización de procesos y cumplimiento estricto de normativas de Seguridad Industrial, Ambiente e Higiene Ocupacional (SIHO-A). Enfocado en transformar la cultura preventiva de las organizaciones, mitigar riesgos operativos críticos y asegurar la continuidad del negocio mediante la toma de decisiones basada en datos y estándares internacionales.
+    <main>
+        <!-- SOBRE MI -->
+        <section>
+            <h2 class="section-title">SOBRE MÍ</h2>
+            <p>
+                Profesional universitario capacitado para ejecutar tareas en el área de calidad, logística, Seguridad Industrial y análisis de riesgo, con experiencia sólida en gestión de operaciones[cite: 1, 2]. Persona proactiva, con alta disposición para trabajar en equipo y desarrollar nuevos aprendizajes. Líder nato, con capacidad comprobada para optimizar procesos, tomar decisiones efectivas y resolver problemas con enfoque preventivo y orientado a resultados.
             </p>
         </section>
 
-        <!-- Experiencia Laboral -->
-        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-            <h2 class="text-xl font-bold text-slate-900 uppercase tracking-wider mb-6 border-b pb-2 border-slate-100">Experiencia Laboral</h2>
+        <!-- HABILIDADES -->
+        <section>
+            <h2 class="section-title">HABILIDADES</h2>
+            <div class="skills-grid">
+                <ul>
+                    <li>Calidad y Mejora Continua</li>
+                    <li>Optimización de Procesos</li>
+                    <li>Resolución de Conflictos</li>
+                </ul>
+                <ul>
+                    <li>Análisis de Riesgos (SIHO / SIAHO)</li>
+                    <li>Elaboración de Informes Técnicos</li>
+                    <li>Gestión de Operaciones e Inventarios</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- LENGUAS -->
+        <section>
+            <h2 class="section-title">LENGUAS</h2>
+            <ul>
+                <li><strong>Español:</strong> Nativo</li>
+                <li><strong>Inglés:</strong> Básico / Técnico</li>
+            </ul>
+        </section>
+
+        <!-- EXPERIENCIA LABORAL -->
+        <section>
+            <h2 class="section-title">EXPERIENCIA LABORAL</h2>
             
-            <div class="space-y-8">
-                <!-- Empleo 1 -->
-                <div>
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                        <h3 class="text-lg font-semibold text-slate-900">Inspector SIHO-A</h3>
-                        <span class="text-sm font-medium bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Julio 2026 - Actualidad</span>
-                    </div>
-                    <p class="text-sm font-medium text-slate-500 mb-3">Construcciones y Servicios Mene Grande C.A | Maracaibo</p>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
-                        <li>Ejecución de inspecciones técnicas rigurosas en instalaciones operativas e industriales garantizando el cumplimiento normativo.</li>
-                        <li>Diseño e implementación de recomendaciones orientadas a consolidar la cultura de prevención y autocuidado en los equipos de trabajo.</li>
-                        <li class="bg-amber-50 p-2 rounded text-amber-900 border border-amber-200"><strong>[❓ Propuesta para cuantificar]:</strong> <em>¿Cuántas inspecciones mensuales realizas en promedio? ¿Qué porcentaje de reducción de incidentes o cumplimiento de normativas has logrado en este periodo?</em></li>
-                    </ul>
+            <!-- Empleo Actual -->
+            <div style="margin-bottom: 20px;">
+                <div class="job-header">
+                    <span class="job-title">INSPECTOR SIHO-A</span>
+                    <span class="job-date">Julio 2026 - Actualidad</span>
                 </div>
+                <div class="job-company">Construcciones y Servicios Mene Grande C.A | Maracaibo</div>
+                <ul>
+                    <li>Ejecución de inspecciones técnicas rigurosas en instalaciones de operaciones e industriales asegurando el cumplimiento estricto de normativas de seguridad[cite: 1, 2].</li>
+                    <li>Elaboración de informes y recomendaciones técnicas orientadas a fortalecer la cultura de prevención y autocuidado en los equipos de trabajo[cite: 1, 2].</li>
+                </ul>
+                <div class="metric-tip">
+                    <strong>[❓ Propuesta para cuantificar]:</strong> <em>¿Cuántas inspecciones mensuales realizas en promedio o qué porcentaje de reducción de incidentes has alcanzado?</em>
+                </div>
+            </div>
 
-                <!-- Empleo 2 -->
-                <div class="border-t pt-6 border-slate-100">
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                        <h3 class="text-lg font-semibold text-slate-900">Inspector SIAHO</h3>
-                        <span class="text-sm font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Mar. 2017 - Feb. 2018</span>
-                    </div>
-                    <p class="text-sm font-medium text-slate-500 mb-3">Nabors | Maracaibo</p>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
-                        <li>Auditorías e inspecciones técnicas especializadas en instalaciones petroleras bajo estrictos estándares de seguridad.</li>
-                        <li class="bg-amber-50 p-2 rounded text-amber-900 border border-amber-200"><strong>[❓ Propuesta para cuantificar]:</strong> <em>¿Cuántas auditorías realizaste y cuántas horas hombre sin accidentes (HHS) se lograron registrar o fiscalizar en tu turno o área asignada?</em></li>
-                    </ul>
+            <!-- Empleo Anterior 1 -->
+            <div style="margin-bottom: 20px;">
+                <div class="job-header">
+                    <span class="job-title">INSPECTOR SIAHO</span>
+                    <span class="job-date">Mar. 2017 - Feb. 2018</span>
                 </div>
+                <div class="job-company">Nabors | Maracaibo</div>
+                <ul>
+                    <li>Inspecciones y auditorías técnicas especializadas en instalaciones de operaciones y/o petroleras en cumplimiento de normativas vigentes[cite: 2].</li>
+                </ul>
+                <div class="metric-tip">
+                    <strong>[❓ Propuesta para cuantificar]:</strong> <em>¿Cuántas auditorías realizaste y cuántas horas-hombre sin accidentes (HHS) respaldaste en tu área?</em>
+                </div>
+            </div>
 
-                <!-- Empleo 3 -->
-                <div class="border-t pt-6 border-slate-100">
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                        <h3 class="text-lg font-semibold text-slate-900">Supervisor de Operaciones</h3>
-                        <span class="text-sm font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Mar. 2016 - Feb. 2017</span>
-                    </div>
-                    <p class="text-sm font-medium text-slate-500 mb-3">Comapetca | Maracaibo</p>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
-                        <li>Supervisión y coordinación de actividades operativas diarias para asegurar el cumplimiento de metas de producción.</li>
-                        <li>Gestión y control de inventarios asegurando la disponibilidad óptima de materiales y suministros.</li>
-                        <li class="bg-amber-50 p-2 rounded text-amber-900 border border-amber-200"><strong>[❓ Propuesta para cuantificar]:</strong> <em>¿A cuántas personas supervisabas directamente? ¿En qué porcentaje mejoró la eficiencia operativa o se redujo el quiebre de stock?</em></li>
-                    </ul>
+            <!-- Empleo Anterior 2 -->
+            <div style="margin-bottom: 20px;">
+                <div class="job-header">
+                    <span class="job-title">SUPERVISOR DE OPERACIONES</span>
+                    <span class="job-date">Mar. 2016 - Feb. 2017</span>
                 </div>
+                <div class="job-company">Comapetca | Maracaibo</div>
+                <ul>
+                    <li>Supervisión y coordinación de actividades diarias para garantizar el cumplimiento oportuno de los objetivos operativos[cite: 2].</li>
+                    <li>Gestión y control de inventarios asegurando la disponibilidad óptima de materiales y productos[cite: 2].</li>
+                </ul>
+                <div class="metric-tip">
+                    <strong>[❓ Propuesta para cuantificar]:</strong> <em>¿A cuántas personas coordinabas y en qué porcentaje mejoraste la eficiencia o control de inventario?</em>
+                </div>
+            </div>
 
-                <!-- Empleo 4 -->
-                <div class="border-t pt-6 border-slate-100">
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                        <h3 class="text-lg font-semibold text-slate-900">Controlador de Centro de Control de Operaciones</h3>
-                        <span class="text-sm font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Abril 2007 - Ene. 2018</span>
-                    </div>
-                    <p class="text-sm font-medium text-slate-500 mb-3">Metro de Maracaibo | Maracaibo</p>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
-                        <li>Control y monitoreo continuo de operaciones ferroviarias complejas bajo protocolos estrictos de seguridad y tiempos de respuesta.</li>
-                        <li class="bg-amber-50 p-2 rounded text-amber-900 border border-amber-200"><strong>[❓ Propuesta para cuantificar]:</strong> <em>¿Cuántos trenes o kilómetros de ruta monitoreabas por turno? ¿Cuál era el volumen aproximado de usuarios gestionados diariamente?</em></li>
-                    </ul>
+            <!-- Empleo Anterior 3 -->
+            <div style="margin-bottom: 20px;">
+                <div class="job-header">
+                    <span class="job-title">CONTROLADOR DE CENTRO DE CONTROL DE OPERACIONES</span>
+                    <span class="job-date">Abril 2007 - Ene. 2018</span>
                 </div>
+                <div class="job-company">Metro de Maracaibo | Maracaibo</div>
+                <ul>
+                    <li>Supervisión, control y monitoreo continuo de actividades operativas críticas para garantizar la seguridad y fluidez del servicio[cite: 2].</li>
+                </ul>
+                <div class="metric-tip">
+                    <strong>[❓ Propuesta para cuantificar]:</strong> <em>¿Cuál era el volumen aproximado de operaciones, trenes o pasajeros diarios bajo tu supervisión?</em>
+                </div>
+            </div>
+
+            <!-- Empleo Anterior 4 -->
+            <div>
+                <div class="job-header">
+                    <span class="job-title">APRENDIZ ELECTRICIDAD DE MANTENIMIENTO INDUSTRIAL</span>
+                    <span class="job-date">Oct. 2000 - Feb. 2003</span>
+                </div>
+                <div class="job-company">PDVSA CIED ORT | Anaco</div>
+                <ul>
+                    <li>Ejecución de mantenimiento preventivo básico en motores eléctricos y tableros de control industriales[cite: 2].</li>
+                    <li>Cumplimiento estricto de normas de seguridad eléctrica, bloqueo y etiquetado (LOTO) durante las tareas asignadas[cite: 2].</li>
+                </ul>
             </div>
         </section>
 
-        <!-- Habilidades y Competencias -->
-        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-            <h2 class="text-xl font-bold text-slate-900 uppercase tracking-wider mb-6 border-b pb-2 border-slate-100">Habilidades Clave</h2>
-            <div class="flex flex-wrap gap-3">
-                <span class="bg-slate-100 text-slate-800 px-4 py-2 rounded-xl text-sm font-medium">Gestión de Calidad</span>
-                <span class="bg-slate-100 text-slate-800 px-4 py-2 rounded-xl text-sm font-medium">Optimización de Procesos</span>
-                <span class="bg-slate-100 text-slate-800 px-4 py-2 rounded-xl text-sm font-medium">Análisis de Riesgos</span>
-                <span class="bg-slate-100 text-slate-800 px-4 py-2 rounded-xl text-sm font-medium">Normativas SIHO / SIAHO</span>
-                <span class="bg-slate-100 text-slate-800 px-4 py-2 rounded-xl text-sm font-medium">Resolución de Conflictos</span>
-                <span class="bg-slate-100 text-slate-800 px-4 py-2 rounded-xl text-sm font-medium">Control de Inventarios</span>
-            </div>
+        <!-- ESTUDIOS -->
+        <section>
+            <h2 class="section-title">ESTUDIOS</h2>
+            <ul>
+                <li><strong>2015:</strong> Ingeniero Industrial — URBE[cite: 2]</li>
+                <li><strong>2006:</strong> Técnico Superior en Electrónica — UNIR[cite: 2]</li>
+                <li><strong>2003:</strong> Técnico Electricista de Mantenimiento Industrial — PDVSA CIED[cite: 2]</li>
+            </ul>
         </section>
 
-        <!-- Educación y Cursos -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Educación -->
-            <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-xl font-bold text-slate-900 uppercase tracking-wider mb-6 border-b pb-2 border-slate-100">Educación</h2>
-                <ul class="space-y-4 text-sm text-slate-600">
-                    <li>
-                        <strong class="text-slate-900 block">Ingeniero Industrial</strong>
-                        <span>URBE (2015)</span>[cite: 2]
-                    </li>
-                    <li class="border-t pt-3 border-slate-100">
-                        <strong class="text-slate-900 block">Técnico Superior en Electrónica</strong>
-                        <span>UNIR (2006)</span>[cite: 2]
-                    </li>
-                    <li class="border-t pt-3 border-slate-100">
-                        <strong class="text-slate-900 block">Técnico Electricista de Mantenimiento Industrial</strong>
-                        <span>PDVSA CIED (2003)</span>[cite: 2]
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Cursos y Certificaciones -->
-            <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-xl font-bold text-slate-900 uppercase tracking-wider mb-6 border-b pb-2 border-slate-100">Certificaciones Clave</h2>
-                <ul class="space-y-3 text-sm text-slate-600">
-                    <li>🔹 <strong>Curso SG-SST (50 hrs):</strong> SENA (Nov. 2025)[cite: 2]</li>
-                    <li>🔹 <strong>Auditor Interno SIAHO (24 hrs):</strong> COFREM (Abr. 2018)[cite: 2]</li>
-                    <li>🔹 <strong>Administración de Logística Integral (160 hrs):</strong> URBE (Abr. 2017)[cite: 2]</li>
-                    <li>🔹 <strong>Control de Energías Peligrosas LOTO/BO (8 hrs):</strong> COFTAH (Ago. 2026)[cite: 2]</li>
-                    <li>🔹 <strong>Líquidos Inflamables y Combustibles (8 hrs):</strong> SOITSHA (Ago. 2026)[cite: 2]</li>
-                    <li>🔹 <strong>Manejo de Residuos Peligrosos (8 hrs):</strong> SOITSHA (Ago. 2026)[cite: 2]</li>
-                </ul>
-            </section>
-        </div>
-
+        <!-- CURSOS Y CERTIFICACIONES -->
+        <section>
+            <h2 class="section-title">CURSOS Y CERTIFICACIONES</h2>
+            <ul>
+                <li><strong>Nov. 2025:</strong> Curso SG-SST (50 horas) — SENA[cite: 2]</li>
+                <li><strong>Ago. 2026:</strong> Módulo C Supervisorio (40 horas) — PDVSA[cite: 2]</li>
+                <li><strong>Ago. 2026:</strong> Control de Energías Peligrosas LOTO/BO (8 horas) — COFTAH[cite: 2]</li>
+                <li><strong>Ago. 2026:</strong> Líquidos Inflamables y Combustibles (8 horas) — SOITSHA[cite: 2]</li>
+                <li><strong>Ago. 2026:</strong> Manejo de Residuos Peligrosos (8 horas) — SOITSHA[cite: 2]</li>
+                <li><strong>Abr. 2018:</strong> Auditor Interno SIAHO (24 horas) — COFREM[cite: 2]</li>
+                <li><strong>Abr. 2017:</strong> Administración de Logística Integral (160 horas) — URBE[cite: 2]</li>
+            </ul>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="text-center py-8 text-slate-400 text-sm">
-        <p>&copy; 2026 Robin Jackson. Todos los derechos reservados.</p>
+    <footer style="text-align: center; font-size: 0.8rem; color: #888; margin-top: 30px;">
+        <p>&copy; 2026 Robin Jackson. Actualizado para procesos de selección.</p>
     </footer>
 
 </body>
